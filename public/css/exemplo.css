@@ -1,0 +1,68 @@
+html,* {
+	margin		: 0px;
+	padding		: 0px;
+	font-family	: Helvetica; 
+}
+
+.max-width {
+	display		: block;
+	width		: 900px;
+	margin		: 0px auto;	
+}
+
+.right {
+	text-align	: right;
+	padding-right	: 10px;
+}
+
+.left {
+	text-align	: left;
+	padding-left	: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top		: 20px;
+}
+
+table caption {
+	background	: #333;
+	color		: #FFF;
+	border-radius: 5px 5px 0px 0px;
+	padding			: 10px 0px;
+	font-weight: bold;
+}
+
+table thead {
+	background	: #DADADA;
+	color		: #333;
+	border-bottom	: 1px dashed #333;
+}
+
+table thead tr th {
+	padding		: 5px 0px;
+	font-weight	: normal;
+}
+
+table tbody tr {
+	height		: 40px;
+	line-height	: 40px;
+}
+table tbody tr:hover {
+	background	: #FDFDFD;
+}
+
+table tfoot {
+	background	: #DADADA;
+	border-bottom	: 4px solid #333;
+	border-top	: 1px dashed #333;
+}
+
+table tfoot tr {
+	height		: 40px;
+}
+
+tr.frete {
+	background	: #EEE;
+}

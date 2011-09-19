@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Exemplo de código com PayPal Frete Fácil</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/exemplo.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/exemplo.css" />
+	</head>
+	<body>
+		<div class="max-width">
+			<h1>PayPal Frete Fácil</h1>
+			<h2>Carrinho de compras</h2>
+			<table>
+				<caption>Itens do carrinho</caption>
+				<thead>
+					<tr>
+						<th width="40%">Produto</th>
+						<th width="20%">Quantidade</th>
+						<th width="20%">Valor Unitário</th>
+						<th width="20%">Valor Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td width="40%" class="left">Produto de teste</td>
+						<td width="20%"><input type="text" name="qtd[1]" value="1" /></td>
+						<td width="20%" class="right price">R$ <span>127.88</span></td>
+						<td width="20%" class="right total">R$ <span>127.88</span></td>
+					</tr>
+					<tr>
+						<td width="40%" class="left">Outro Produto</td>
+						<td width="20%"><input type="text" name="qtd[2]" value="1" /></td>
+						<td width="20%" class="right price">R$ <span>123.45</span></td>
+						<td width="20%" class="right total">R$ <span>123.45</span></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr class="frete">
+						<td colspan="3" width="80%" class="left">
+							<label for="cep">CEP:</label>
+							<input id="cep" name="cep" />
+							<input id="calccep" type="button" value="Calcular" />
+						</td>
+						<td width="20%" class="right total">R$ <span>0.00</span></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="right"><strong>Total Geral</strong></td>
+						<td class="right cart-total">R$ <span>251.33</span></td>
+					</tr>
+				</tfoot>	
+			</table>
+		</div>
+	</body>
+</html>
