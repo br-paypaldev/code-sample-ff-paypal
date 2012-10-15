@@ -55,6 +55,14 @@ class PayPalFreteFacil {
 	 * @return	SoapClient
 	 */
 	protected function getSoapClient() {
+		//Para que o código de integração funcione adequadamente,
+		//as seguintes dependências devem ser resolvidas:
+		//
+		//OpenSSL - http://www.php.net/manual/pt_BR/openssl.installation.php
+		//PHP Soap - http://www.php.net/manual/en/soap.installation.php
+		//
+		//A extensão PHP Soap depende ainda da libxml, que também
+		//deve estar disponível no sistema.
 		$client = new SoapClient( PayPalFreteFacil::ADDRESS . '?wsdl' , array(
 			'trace'			=> true,
 			'exceptions'	=> true,
